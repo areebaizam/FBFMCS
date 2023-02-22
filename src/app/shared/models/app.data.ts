@@ -49,7 +49,7 @@ export const headerData = [
     order: 5,
     type: eNodeType.ROUTE,
     iconClass: "mosque",
-    iconLabel: "F M C S",
+    iconLabel: "Display",
     url: eRouteURL.BASE,
     category: eNodeCategory.BRAND,
     visible: true,
