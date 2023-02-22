@@ -12,7 +12,7 @@ import { DOCUMENT } from "@angular/common";
 })
 export class SeoMetatagService {
   //TODO Remove base url
-  baseURL: string = "https://ashy-cliff-00fa64610.2.azurestaticapps.net";
+  baseURL: string = "https://thefmcs.ca";
   fbAppID: string = "FraserMusallah";
   //TO move to SEO DATA
   keywords ="mosque musallah prayer timings vancouver";

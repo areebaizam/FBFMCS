@@ -480,7 +480,7 @@ export class PrayerService {
     prayerMethod: PrayerCalcMethodDegree | undefined,
     prayer: ePrayers
   ): string {
-    let maghribLabel = "Ghuroob";
+    let maghribLabel = "Sunset";
     let ishaLabel = "";
     if (prayerMethod && prayerMethod.MaghribOffset) {
       let unit =
