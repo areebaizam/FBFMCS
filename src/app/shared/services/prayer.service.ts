@@ -463,7 +463,7 @@ export class PrayerService {
     this.prayers.forEach((p) => {
       console.log(
         formatDate(Date(),"medium", this.locale),
-        " PrayersFB",        
+        " Prayers-FB",        
         p.name,
         p.label,
         p.start,
