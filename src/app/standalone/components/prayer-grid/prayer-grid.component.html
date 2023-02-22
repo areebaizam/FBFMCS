@@ -1,0 +1,53 @@
+<div class="prayer-grid-container">
+    <div class="prayer-wrapper">
+        <div class="interval-grid-wrapper">
+            <span class="body-text prayer-label">Salat</span>
+            <span class="body-text prayer-label align-center">Athan/Starts</span>
+            <span class="body-text prayer-label align-right">Iqamah/Ends</span>
+        </div>
+        <span class="separator mb-1"></span>
+        <ng-container *ngFor="let prayer of prayerService.prayers">
+            <div class="prayer-grid-wrapper jumuah-name" [class.isActive]="prayer.isActive"
+                *ngIf="prayer.type===prayerType.PRAYER">
+                <div class="prayer-time-container">
+                    <span class="prayer-time main-sub-title">{{prayer.name}}</span>
+                    <span class="body-text prayer-label">{{prayer.label}}</span>
+                </div>
+                <div class="prayer-time-container">
+                    <span class="prayer-time main-sub-title align-center">{{prayer.athan}}</span>
+                    <span class="body-text prayer-label align-center">{{prayer.start}}</span>
+                </div>
+                <div class="prayer-time-container">
+                    <span class="prayer-time main-sub-title align-right">{{prayer.iqamah}}</span>
+                    <span class="body-text prayer-label align-right">{{prayer.end}}</span>
+                </div>
+            </div>
+            <div class="interval-grid-wrapper makrooh" *ngIf="prayer.type===prayerType.MAKROOH"
+                [class.isActiveWarn]="prayer.isActive">
+                <span class="body-text prayer-label">{{prayer.name}}</span>
+                <span class="body-text prayer-label align-center">{{prayer.start}}</span>
+                <span class="body-text prayer-label align-right">{{prayer.end}}</span>
+            </div>
+            <div class="interval-grid-wrapper" *ngIf="prayer.type===prayerType.NAFL" [class.isActiveNafl]="prayer.isActive">
+                <span class="body-text prayer-label">{{prayer.name}}</span>
+                <span class="body-text prayer-label align-center">{{prayer.start}}</span>
+                <span class="body-text prayer-label align-right">{{prayer.end}}</span>
+            </div>
+            <div class="prayer-grid-wrapper jumuah-name" *ngIf="prayer.type===prayerType.JUMUAH">
+                <div class="prayer-time-container">
+                    <span class="prayer-time main-sub-title">{{prayer.name}}</span>
+                    <span class="body-text prayer-label">{{prayer.label}}</span>
+                </div>
+                <div class="prayer-time-container">
+                    <span class="prayer-time main-sub-title align-center">{{prayer.athan}}</span>
+                    <span class="body-text prayer-label align-center">Jumuah I</span>
+                </div>
+                <div class="prayer-time-container">
+                    <span class="prayer-time main-sub-title align-right">{{prayer.iqamah}}</span>
+                    <span class="body-text prayer-label align-right">Jumuah II</span>
+                </div>
+            </div>
+        </ng-container>
+        <span class="body-text align-center">{{orgDetails}}</span>
+    </div>
+</div>

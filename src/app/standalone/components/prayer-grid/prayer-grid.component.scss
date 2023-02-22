@@ -1,0 +1,155 @@
+@import '/src/app/styles/global-variables.scss';
+@import '/src/app/styles/styles-theme.scss';
+
+.prayer-grid-container {
+    display: flex;
+    justify-content: center;
+}
+
+.prayer-wrapper {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    align-items: center;
+    width: 600px;
+    padding: 5px;
+    background-color: white;
+    border: 1px solid $primary-theme-color-background-dark;
+}
+
+.prayer-grid-wrapper,
+.interval-grid-wrapper {
+    width: 100%;
+    min-width: 300px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+}
+
+.interval-grid-wrapper {
+    padding: 3px 10px 0 10px;
+}
+
+
+.prayer-grid-wrapper {
+    margin: 5px 0;
+    background-color: rgba($primary-theme-color-background, 0.5);
+    height: 50px;
+    padding: 0 10px;
+}
+
+.isActive {
+    // background-color: $primary-theme-color-background-dark;
+    background-color: rgba($primary-theme-color, 1);
+
+    -webkit-box-shadow: 10px 10px 21px -7px rgba(93, 64, 55, 1);
+    -moz-box-shadow: 10px 10px 21px -7px rgba(93, 64, 55, 1);
+    box-shadow: 10px 10px 21px -7px rgba(93, 64, 55, 1);
+
+    * {
+        color: $primary-theme-color-background;
+    }
+}
+
+.isActiveWarn {
+    background-color: rgba(255, 189, 211, .4);
+}
+
+.isActiveNafl {
+    background-color: rgba($primary-theme-color-background-dark, 0.7);
+}
+
+
+.prayer-name,
+.prayer-time,
+.interval-name,
+.interval-time {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.prayer-label {
+    width: 110px;
+}
+
+.khutbah-label {
+    width: 120px
+}
+
+.khutbah-name {
+    line-height: 1;
+    font-size: 20px;
+}
+
+.prayer-name {
+    width: 110px;
+    font-size: 32px;
+}
+
+.jumuah-name {
+    height: 55px;
+}
+
+.interval-name {
+    width: 120px;
+    font-size: 24px;
+    line-height: 1.5;
+}
+
+.prayer-time {
+    width: 110px;
+    font-weight: 500;
+}
+
+
+.interval-time {
+    width: 110px;
+    line-height: .5;
+    font-size: 20px;
+}
+
+.makrooh {
+    * {
+        color: #E56D4B;
+    }
+}
+
+.prayer-time-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+/* On screens that are 600px or less */
+@media screen and (max-width: 600px) {
+    .prayer-name {
+        font-size: 24px;
+        line-height: 1.8;
+        width: 100px;
+    }
+
+    .prayer-time,
+    .prayer-label,
+    .interval-time {
+        width: 110px;
+    }
+
+    .khutbah-label {
+        width: 110px
+    }
+
+    .interval-name {
+        width: 110px;
+        font-size: 20px;
+    }
+
+    .interval-time {
+        font-size: 16px;
+    }
+
+    .interval-label {
+        font-size: 12px;
+    }
+
+}

@@ -1,0 +1,102 @@
+@import "/src/app/styles/global-variables.scss";
+
+.main-header-wrapper {
+  height: $main-header-height;
+  padding: 0 $main-content-padding-x !important;
+}
+
+.main-body-wrapper {
+  min-height: $main-wrapper-height;
+  padding: 0 $page-wrapper-padding-right 0 $page-wrapper-padding-left;
+}
+
+.mobile-header-buffer {
+  height: $main-header-height;
+}
+
+
+.flex-row,
+.flex-row-center,
+.flex-row-around,
+.flex-row-between {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.flex-row-center {
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-row-around {
+  justify-content: space-around;
+}
+
+.flex-row-between {
+  justify-content: space-between;
+}
+
+.flex-column-start,
+.flex-column-center,
+.flex-column-around,
+.flex-column-between {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.flex-column-start {
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.flex-column-center {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.flex-column-around {
+  justify-content: space-around;
+}
+
+.flex-column-between {
+  justify-content: space-between;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.section-sixty {
+  width: 60%;
+}
+
+.section-forty {
+  width: 40%;
+}
+
+
+/* On screens that are 600px or less */
+@media screen and (max-width: 600px) {
+  .section-sixty {
+    width: 100%;
+  }
+
+  .section-forty {
+    // align-items: center;
+    padding-left: unset;
+    width: 100%;
+
+    .flex-row {
+      justify-content: center;
+    }
+  }
+
+}

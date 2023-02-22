@@ -1,0 +1,70 @@
+@import '/src/app/styles/global-variables.scss';
+@import '/src/app/styles/styles-theme.scss';
+
+.prayer-header {
+    display: flex;
+    background-color: $primary-theme-color-background;
+    position: fixed;
+    height: $main-header-height;
+    padding: 0 $page-wrapper-padding-right 0 $page-wrapper-padding-left;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: center;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.brand-img {
+    width: 108px;
+    height: 120px;
+    margin-top: 30px;
+}
+.brand {
+    width: 360px;
+    height: 108px;
+    padding-top: 30px;
+    padding-left: 8px;
+}
+
+.time {
+    font-size: 60px;
+    width: 880px;
+}
+.time-header {
+    font-size: 120px;
+    width: 880px;
+    line-height: 1;
+    margin-top: 16px;
+}
+
+.rem-time {
+    font-size: 32px;
+    width: 350px;
+}
+
+/* On screens that are 600px or less */
+// @media screen and (max-width: 600px) {
+//     .time{
+//         display: none;
+//     }
+// }
+/* On screens that are 1280 or less in height*/
+@media screen and (max-height: 1280px) {
+    .brand-img {
+        width: 56px;
+        height: 64px;
+        margin-top: 0;
+    }
+    .brand {
+        width: 240px;
+        height: 80px;
+        padding-left: 8px;
+        padding-top: 0px;
+    }
+    .time{
+        font-size: 28px;
+        width: 360px;
+        line-height: 1;
+    }
+}

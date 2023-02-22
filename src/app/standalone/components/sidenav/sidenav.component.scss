@@ -1,0 +1,19 @@
+@import '/src/app/styles/global-variables.scss';
+@import '/src/app/styles/styles-theme.scss';
+
+.nav-container {
+    position: fixed;
+}
+
+.wrapper {
+    width: 100%;
+}
+
+.node {
+    padding-left: $page-wrapper-padding-left;
+    justify-content: flex-start;
+}
+
+.active {
+    background-color:$primary-theme-color-background-dark;
+}

@@ -1,0 +1,15 @@
+<div class="prayer-header" *ngIf="showHeader">
+    <button mat-button color="primary" aria-label="Home" routerLink="['home']" style="width: fit-content;">
+        <span class="main-title title">Fraserview Muslim Community Services</span>
+    </button>
+</div>
+<div class="flex-column-center mt-3">
+    <div class="flex-row-center">
+        <img src="/../assets/images/png/fmcs.png" class="img-fluid brand-img">
+        <img src="/../assets/images/svg/bismillah.svg" class="img-fluid brand" alt="brand">
+    </div>
+    <span class="main-title time-header" *ngIf="showHeader">{{formattedTime}}</span>
+    <!-- <span class="main-title time" *ngIf="!hideDate">{{prayerService.hijriDate}}</span> -->
+    <span class="main-title time" *ngIf="!hideDate">{{formattedDate}}</span>
+    <!-- <span class="main-title time">{{formattedRemainingTime}}</span> -->
+</div>

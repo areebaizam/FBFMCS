@@ -1,0 +1,14 @@
+<ng-container *ngIf="isBrowser">
+    <tap-header-display [hideDate]="true"></tap-header-display>
+</ng-container>
+<div class="hero-container">
+    <div class="wrapper">
+        <div class="section-forty pb-2">
+            <tap-heading [heading]="heading" [alignLeft]="true">
+            </tap-heading>
+        </div>
+        <div class="section-sixty">
+            <tap-prayer-time></tap-prayer-time>
+        </div>
+    </div>
+</div>

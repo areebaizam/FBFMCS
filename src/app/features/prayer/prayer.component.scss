@@ -1,0 +1,90 @@
+@import '/src/app/styles/global-variables.scss';
+@import '/src/app/styles/styles-theme.scss';
+
+.prayer-header {
+    display: flex;
+    background-color: $primary-theme-color-background;
+    position: fixed;
+    height: $main-header-height;
+    padding: 0 $page-wrapper-padding-right 0 $page-wrapper-padding-left;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: center;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.prayer-container{
+    padding: 0 $page-wrapper-padding-right 0 $page-wrapper-padding-left;
+    min-height: $main-wrapper-height;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.header-wrapper {
+    display: flex;
+    flex-direction: column;    
+    align-items: center;
+    text-align: center;    
+}
+
+.brand {
+    width: 230px;
+    margin: 1rem 0 8px 0;
+}
+
+.title {
+    font-size: 26px;
+    line-height: 1;
+}
+
+.timer {
+    font-size: 66px;
+    line-height: 1;
+}
+
+/* On screens that are 600px or less */
+@media screen and (max-width: 600px) {
+
+    .prayer-header,
+    .mobile {
+        display: none;
+    }
+
+    .brand {
+        width: 280px;
+    }
+
+    .timer {
+        font-size: 48px;
+    }
+}
+
+.wrapper {
+    width: 180px;
+    height: 185px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(121, 85, 72, .15);
+    background-image: url('/../assets/images/svg/bg-lisbon.svg');
+    margin: 3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.zawal {
+    background-image: unset;
+    background-color: #ef9a9a; //$red-200
+    border: 1px solid #e57373; //$red-300
+}
+
+.active {
+    background-image: unset;
+    background-color: #a5d6a7; //$green-200
+    border: 1px solid #81c784; //$green-300
+}

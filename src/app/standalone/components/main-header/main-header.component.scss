@@ -1,0 +1,9 @@
+@import '/src/app/styles/global-variables.scss';
+.wrapper {
+    padding: 0 $page-wrapper-padding-right 0 $page-wrapper-padding-left;
+    position: fixed;
+}
+.brand{
+    font-size: 24px;
+    padding: 1px 5px;
+}

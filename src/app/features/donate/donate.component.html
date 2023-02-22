@@ -1,0 +1,53 @@
+<div class="donation-container">
+    <div class="wrapper pt-3">
+        <tap-heading [heading]="heading"></tap-heading>
+        <span class="main-sub-title quote text-italic align-center">Prophet Muhammad ﷺ said...</span>
+        <span class="main-sub-title quote text-italic align-center">“Allah said: ‘Spend, O Son of Adam, and I shall
+            spend on you.’”</span>
+        <div class="separator my-3" aria-hidden="true"></div>
+        <span class="main-sub-title quote">Select Payment Method</span>
+        <div class="btn-wrapper my-3">
+            <a href="https://www.thefmcs.ca/stripe" >
+                <button mat-flat-button color="primary"><mat-icon class="material-icons-outlined"
+                        aria-hidden="true">credit_card</mat-icon>Credit
+                    Card</button>
+            </a>
+            <form action="https://www.paypal.com/donate" method="post" target="_blank" class="donate-button">
+                <input type="hidden" name="hosted_button_id" value="R2BNU3PQVWV4A" />
+                <button mat-stroked-button color="primary"><mat-icon
+                        aria-hidden="true">account_balance</mat-icon>Paypal</button>
+            </form>
+        </div>
+        <div class="card">
+            <div class="pointers">
+                <span>-</span>
+                <p class="main-text">We are very grateful for all donations made to Fraserview Muslim Community
+                    Services.</p>
+            </div>
+            <div class="pointers">
+                <span>-</span>
+                <p class="main-text">Please become regular monthly donor for this centre as we only depend on your
+                    donations for all of our activities.</p>
+            </div>
+            <div class="pointers">
+                <span>-</span>
+                <p class="main-text">Please donate generously as this ensures that the mosque is maintained properly and
+                    the Muslim community benefits from these facilities.</p>
+            </div>
+            <div class="pointers">
+                <span>-</span>
+                <p class="main-text">Please note that all donations are <b>Tax Deductible</b>. A Tax Receipt will be
+                    issued as
+                    soon as donation is received.</p>
+            </div>
+            <div class="pointers">
+                <span>-</span>
+                <p class="main-text">May Allah reward you for all your good deeds. </p>
+            </div>
+            <p class="main-text px-3">Jazakum Allah Khair.</p>
+        </div>
+    </div>
+
+
+    <tap-footer-copyright></tap-footer-copyright>
+</div>
