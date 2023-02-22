@@ -493,7 +493,7 @@ export class PrayerService {
     if (prayerMethod && prayerMethod.IshaOffset) {
       ishaLabel =
         prayerMethod.IshaSelector === OffsetSelector.MINUTES
-          ? "Ghuroob + " + prayerMethod.IshaOffset + "'"
+          ? "Sunset + " + prayerMethod.IshaOffset + "'"
           : prayerMethod.IshaOffset + "° to Midnight";
     }
     return prayer === ePrayers.MAGHRIB ? maghribLabel : ishaLabel;

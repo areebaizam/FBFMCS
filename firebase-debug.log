@@ -1,0 +1,19 @@
+[debug] [2023-02-22T18:02:34.819Z] ----------------------------------------------------------------------
+[debug] [2023-02-22T18:02:34.821Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\aahmad\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2023-02-22T18:02:34.821Z] CLI Version:   11.23.1
+[debug] [2023-02-22T18:02:34.821Z] Platform:      win32
+[debug] [2023-02-22T18:02:34.822Z] Node Version:  v18.10.0
+[debug] [2023-02-22T18:02:34.823Z] Time:          Wed Feb 22 2023 10:02:34 GMT-0800 (Pacific Standard Time)
+[debug] [2023-02-22T18:02:34.823Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-02-22T18:02:34.889Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-02-22T18:02:34.889Z] > authorizing via signed-in user (cheapcarrentalvancouver@gmail.com)
+[debug] [2023-02-22T18:02:34.890Z] [iam] checking project fcms-ca for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-02-22T18:02:34.892Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/fcms-ca:testIamPermissions [none]
+[debug] [2023-02-22T18:02:34.892Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/fcms-ca:testIamPermissions x-goog-quota-user=projects/fcms-ca
+[debug] [2023-02-22T18:02:34.892Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/fcms-ca:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-02-22T18:02:36.136Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/fcms-ca:testIamPermissions 200
+[debug] [2023-02-22T18:02:36.137Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/fcms-ca:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-02-22T18:02:36.139Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/fcms-ca [none]
+[debug] [2023-02-22T18:02:36.976Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/fcms-ca 200
+[debug] [2023-02-22T18:02:36.976Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/fcms-ca {"projectId":"fcms-ca","projectNumber":"308999142771","displayName":"FCMS","name":"projects/fcms-ca","resources":{"hostingSite":"fcms-ca"},"state":"ACTIVE","etag":"1_1db35fd0-d689-4b20-835c-38f9aad3d82d"}

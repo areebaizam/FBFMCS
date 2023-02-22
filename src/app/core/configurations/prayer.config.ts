@@ -14,11 +14,11 @@ export const PrayerConfig = {
   highAltitudeAdj: eHighAltitudeAdjustment.MIDNIGHT,
   offsetInMinutes: {
     imsak: 0,//-10
-    fajr: 0,//-15
+    fajr: -5,//-15
     ishraq: 20,
     zawal: -20,
     dhur: 2,
-    asr: 0,//-15
+    asr: -5,//-15
     maghrib: 9,//1 minute added in BCMA
   },
 } as PrayerConfigModel;

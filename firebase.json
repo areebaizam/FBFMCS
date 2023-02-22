@@ -1,16 +1,10 @@
 {
   "hosting": {
-    "public": "dist/ClientApp/browser",
+    "source": ".",
     "ignore": [
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
-    ],
-    "rewrites": [
-      {
-        "source": "**",
-        "destination": "/index.html"
-      }
     ]
   }
 }
