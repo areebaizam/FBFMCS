@@ -263,21 +263,21 @@ export class PrayerService {
     let currentDayInEpoch: PrayerTimingsModel = this.getCurrentDayTimings();
     this.getSolarTimings();
     this.prayers.push(
-      // {
-      //   name: ePrayers.TAHAJJUD,
-      //   type: ePrayerType.NAFL,
-      //   start: formatDate(
-      //     DateHelper.addDaysToEpochInEpoch(this._ishaEndInEpoch, -1),
-      //     "hh:mm a",
-      //     this.locale
-      //   ),
-      //   startEpoch: DateHelper.addDaysToEpochInEpoch(this._ishaEndInEpoch, -1),
-      //   end: formatDate(this._imsakStartInEpoch, "hh:mm a", this.locale),
-      //   endEpoch: this._imsakStartInEpoch,
-      //   visible: false,
-      //   isActive: false,
-      //   order: 1,
-      // },
+      {
+        name: ePrayers.TAHAJJUD,
+        type: ePrayerType.NAFL,
+        start: formatDate(
+          DateHelper.addDaysToEpochInEpoch(this._ishaEndInEpoch, -1),
+          "hh:mm a",
+          this.locale
+        ),
+        startEpoch: DateHelper.addDaysToEpochInEpoch(this._ishaEndInEpoch, -1),
+        end: formatDate(this._imsakStartInEpoch, "hh:mm a", this.locale),
+        endEpoch: this._imsakStartInEpoch,
+        visible: false,
+        isActive: false,
+        order: 1,
+      },
       {
         name: ePrayers.FAJR,
         label: this.prayerCalcMethod?.FajrOffset + "° - Sunrise",
