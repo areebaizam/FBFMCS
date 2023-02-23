@@ -12,8 +12,8 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - run: npm ci && npm run build:ssr
-      - name: gcr.io/fcms-ca/firebase
-        args: ['deploy', '--project=fcms-ca', '--only=hosting']
+      - name: gcr.io/$PROJECT_ID/firebase
+        args: ['deploy', '--project=$PROJECT_ID', '--only=hosting']
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
