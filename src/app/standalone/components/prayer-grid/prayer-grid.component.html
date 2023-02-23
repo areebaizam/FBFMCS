@@ -25,8 +25,8 @@
             <div class="interval-grid-wrapper makrooh" *ngIf="prayer.type===prayerType.MAKROOH"
                 [class.isActiveWarn]="prayer.isActive">
                 <span class="body-text prayer-label">{{prayer.name}}</span>
-                <span class="body-text prayer-label align-center">{{prayer.start}}</span>
-                <span class="body-text prayer-label align-right">{{prayer.end}}</span>
+                <span class="body-text prayer-label align-center">{{prayer.label}}</span>
+                <span class="body-text prayer-label align-right">{{prayer.athan}}</span>
             </div>
             <div class="interval-grid-wrapper" *ngIf="prayer.type===prayerType.NAFL" [class.isActiveNafl]="prayer.isActive">
                 <span class="body-text prayer-label">{{prayer.name}}</span>
